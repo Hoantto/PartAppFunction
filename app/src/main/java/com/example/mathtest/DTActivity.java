@@ -114,7 +114,7 @@ public class DTActivity extends AppCompatActivity {
                         else {
                             editText.setText(questionArrayList.get(count - 1).getUseranswer());
                         }
-                        toolbar.setTitle("答题 ("+  count + ")");
+                        toolbar.setTitle("答题 ("+  count +"/"+NumberOfQuestions+ ")");
                     }
                     else {
                         answerCheck();
@@ -152,7 +152,7 @@ public class DTActivity extends AppCompatActivity {
                     count--;
                     textView.setText(questionArrayList.get(count-1).getQuestion());
                     editText.setText(questionArrayList.get(count-1).getUseranswer());
-                    toolbar.setTitle("答题 ("+  count + ")");
+                    toolbar.setTitle("答题 ("+  count +"/"+NumberOfQuestions+ ")");
                 }
 
             }
